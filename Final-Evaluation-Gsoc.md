@@ -19,7 +19,7 @@
 
 1. [Project Description](#project-description)
 2. [SOFIE: System for Optimized Fast Inference code Emit](#sofie-system-for-optimized-fast-inference-code-emit)
-3. [GSoC 2022 Objectives](#gsoc-2022-objectives)
+3. [GSoC 2024 Objectives](#gsoc-2022-objectives)
 4. [Work Accomplished](#work-accomplished)
    - [New Operator Implementations](#1-implementing-New-Operator-Classes)
    - [Extending Existing Operators](#2-adapting-existing-operator-classes-to-parse-parameterized-shapes)
@@ -45,7 +45,7 @@ model.OutputGenerated("./example_output.hxx");
 
 SOFIE uses BLAS or Eigen for executing the inference and Protobuf3 to parse ONNX files. It features two main classes: ```RModel``` for holding model data and ```ROperator``` for handling ONNX operations and generating inference code. Another sub-directory, `sofie-parsers`, was added under TMVA to include the ONNX parser, RModelParser_ONNX. This parser reads ONNX files, loads their values into an RModel object, and returns it. It creates an intermediate representation of the model and outputs a C++ header file with an infer function that can be directly used in production environments.
 
-![flowchart_sofie](./assets/Blank%20board%20-%20Page%201.png)
+![flowchart_sofie](https://raw.githubusercontent.com/extint/gsoc24-blog/main/assets/Blank%20board%20-%20Page%201.png)
 
 ## Objective for GSoC24
 
@@ -198,7 +198,7 @@ Working at CERN this summer was both productive and rewarding. The learning curv
 
 Knowing that the code we worked on will be used in real-life high-energy physics experiments at CERN was a huge motivator. Finally being able to parse models like ParticleNet was especially fulfilling.
 
-I would like to express my heartfelt gratitude to my mentors for their patience and support throughout this process. They understood my university commitments and adjusted timelines accordingly. Additionally, I want to thank my friends and seniors at my university for their guidance and encouragement, which helped me navigate through GSoC 2024.
+I would like to express my heartfelt gratitude to my mentors for their patience and support throughout this process. They understood my university commitments and adjusted timelines accordingly. Additionally, I want to thank my friends and seniors at Project X, an Open-Source AI-ML club at my university (VJTI) for their guidance and encouragement, which helped me navigate through GSoC 2024.
  
 
 **Thanks and Regards,**
